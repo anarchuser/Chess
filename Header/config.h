@@ -6,6 +6,10 @@
 
 #include <iostream>
 
+#include "stdchess.h"
+
+#include "Piece.h"
+#include "Color.h"
 #include "Instance.h"
 
 #endif

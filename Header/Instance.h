@@ -9,11 +9,22 @@
 
 class Instance
 {
-	private:
-		Team white;
-		Team black;
+	public:
+		Instance ();
 		
-		int size = BOARD_SIZE;
-		int turn = 0;
+		int getBoardSize ();
+		int getTurn ();
+		Color white ();
+		Color black ();
 
+	private:
+		Color white;
+		Color black;
+
+		Piece board [BOARD_SIZE][BOARD_SIZE];
+		int size = BOARD_SIZE;
+		int turn;
+
+		void initBoard ();
+}
 #endif
