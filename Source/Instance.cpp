@@ -2,35 +2,71 @@
 
 #include "../Header/config.h"
 
-Instance :: Instance ()
-{
-	white = new Color ('w');
-	black = new Color ('b');
+#include <iostream>
 
-	initBoard ();
+using std::cerr;
+using std::endl;
+
+Instance :: Instance (int modeW, int modeB, bool debug)
+{
+	this->debug = debug;
+
+	switch (modeW)
+	{
+		case 0:
+			white = new Human ('w', board.getBox ('w'));
+			break;
+		case 1:
+			white = new Algorithm ('w', board.getBox ('w'));
+			break;
+		case 2:
+			white = new AI ('w', board.getBox ('w'));
+			break;
+		default:
+			cerr << "Unknown Play mode. Default to Human for White" << endl;
+			white = new Human ('w', board.getBox ('w'));
+	}
+
+	switch (modeB)
+	{
+		case 0:
+			black = new Human ('b', board.getBox ('b'));
+			break;
+		case 1:
+			black = new Algorithm ('b', board.getBox ('b'));
+			break;
+		case 2:
+			black = new AI ('b', board.getBox ('b'));
+			break;
+		default:
+			cerr << "Unknown Play mode. Default to Human for Black" << endl;
+			black = new Human ('b', board.getBox ('b'));
+
+	}
+
+	Board board = new Board();
+}
+
+char Instance :: start ()
+{
+	board.print ();
+	return turn (1);
+}
+
+char Instance :: turn (int turn)
+{
+	Move move;
+	do
+	{
+		if (turn % 2 == 1) move = white.act ();
+		else move = black.act ();
+	} while (debug && board.exec (move));
 	
-	size = BOARD_SIZE;
-	turn = 0;
-}
-
-int Instance :: getBoardSize () {return BOARD_SIZE;}
-int Instance :: getTurn () {return turn;}
-Color Instance :: white () {return white;}
-Color Instance :: black () {return black;}
-
-void Instance :: initBoard ()
-{
-	for (int i = 0; i < white.size (); i++)
+	if (debug) 
 	{
-		board [white.army [i].getX ()][white.army [i].getY ()] = white.army [i];
-		board [black.army [i].getX ()][black.army [i].getY ()] = black.army [i];
+		board.print ();
+		printMove (move);
 	}
-	for (int y = 2; y < 6; y++)
-	{
-		for (int x = 0; x < 8; x++)
-		{
-			board [x][y] = NULL;
-		}
-	}
+	return turn (turn + 1);
+	if (debug) printMove (move);
 }
-

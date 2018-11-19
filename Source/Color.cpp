@@ -2,13 +2,13 @@
 
 #include "../Header/Color.h"
 
-Color :: Color (int color)
+Color :: Color (int color, Piece * box)
 {
 	this->color = convertColor (color);
-	armySize = PIECE_AMOUNT;
 
-	initPieces (army, PIECE_AMOUNT);
-	initPieces (graveyard, PIECE_AMOUNT, NULL);
+	army = box;
+
+	initGraveyard ();
 
 	int armySize = PIECE_AMOUNT;
 	int graveyardSize = 0;
@@ -65,38 +65,10 @@ Character Color :: initAttr (char symbol)
 	return attr;
 }
 
-void Color :: initPieces ();
+void Color :: initGraveyard ()
 {
-	int index = 0;
-
-	// Init King + Queen
-	army [index] = new King (index, color, (int) (3.5 + 0.5 * color), (int) (3.5 - 3.5 * color), initAttr ('K'));
-	index++;
-	army [index] = new Queen (index, color, (int) (3.5 - 0.5 * color), (int) (3.5 - 3.5 * color), initAttr ('Q'));
-	index++;
-
-	// Init Bishops
-	army [index] = new Bishop (index, color, 2, (int) (3.5 - 3.5 * color), initAttr ('B'));
-	index++;
-	army [index] = new Bishop (index, color, 5, (int) (3.5 - 3.5 * color), initAttr ('B'));
-	index++;
-
-	// Init Knights
-	army [index] = new Knight (index, color, 1, (int) (3.5 - 3.5 * color), initAttr ('N'));
-	index++;
-	army [index] = new Knight (index, color, 6, (int) (3.5 - 3.5 * color), initAttr ('N'));
-	index++;
-	
-	// Init Rooks
-	army [index] = new Rooks (index, color, 0, (int) (3.5 - 3.5 * color), initAttr ('R'));
-	index++;
-	army [index] = new Rooks (index, color, 7, (int) (3.5 - 3.5 * color), initAttr ('R'));
-	index++;
-		
-
-	// Init Pawns
-	for (int i = 0; i < 8; i++)
+	for (int i = 0; i < PIECE_AMOUNT; i++)
 	{
-		army [index] = new Pawn (index, color, i, (int) (3.5 - 2.5 * color), initAttr ('P'));
+		graveyard [i] = NULL;
 	}
 }

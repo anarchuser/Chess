@@ -5,13 +5,16 @@
 
 #include "Piece.h"
 
+#include <string>
+
 // Amount of Pieces per Color
 #define PIECE_AMOUNT 16
 
+// Interface for different Opponents
 class Color
 {
 	public:
-		Color (int color);
+		Color (Piece * box, int color);
 
 		int getChessVal ();
 		double getValue ();
@@ -19,7 +22,9 @@ class Color
 		int size ();
 		Piece [] getPieces ();
 		Piece [] getCapturedPieces ();
-		
+
+		// Virtual function to execute a move // returns a 'move'
+		virtual move act ();
 
 	private:
 		Piece [PIECE_AMOUNT] army;
@@ -27,10 +32,25 @@ class Color
 		int armySize;
 		int graveyardSize;
 		int color;
+		int * board [][];
 
 		Piece getKing ();
 		void sortArmy ();
 		void initPieces ();
 		Character initAttr (char symbol);
 }
+
+// Human-playable Color
+class Human: public Color
+{
+}
+
+class Algorithm: public Color
+{
+}
+
+class AI: public Color
+{
+}
+
 #endif

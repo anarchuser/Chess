@@ -3,15 +3,6 @@
 
 // Piece Interface + Specifications
 
-// Struct for the different attributes of pieces (for calculating their value)
-typedef struct
-{
-	double offend;
-	double defend;
-
-	int captures;
-} Character;
-
 class Piece
 {
 	public:
@@ -20,9 +11,7 @@ class Piece
 		Character attr;
 		
 		bool getColor ();
-		int getX ();
-		int getY ();
-		int [[][]] getValidMoves ();
+		Coord getCoord ();
 		int getChessVal ();
 		double getValue ();
 		bool isCaptured ();
@@ -30,18 +19,15 @@ class Piece
 		char getSymbol ();
 		int getID ();
 		void getCaptured ();
-		Piece getPiece (int x, int y);
+		Coords getMoves ();
 
-		// Jump: absolute coordinates
-		// Move: relative coordinates
-		bool jump (int x, int y);
+		virtual bool jump (int x, int y);
 		virtual bool move (int dx, int dy);
 		virtual void capture (Piece victim);
 
 	private:
 		char color;
-		int x;
-		int y;
+		Coord coord;
 		int chessVal;
 		double value;
 		Character attr;
@@ -50,7 +36,6 @@ class Piece
 		char symbol;
 		int id;
 
-		int [[][]] getMoves ();
 		bool isOppositeColor (char color);
 		bool isSameColor (char color);
 }
