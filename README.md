@@ -1,4 +1,4 @@
-# ChessAI
-Chess Game + AI algorithm; further details tba
+# Chess
+Chess game as header for C++, for easy include & modifivation in a program.
 
--> Starting project for working with c++
+Will be set up for use with control headers (see ChessAI for further details).
