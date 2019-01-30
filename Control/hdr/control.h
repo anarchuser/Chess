@@ -2,9 +2,12 @@
 // Created by aaron on 29/01/2019.
 //
 
-#ifndef CHESS_CONTROL_H
-#define CHESS_CONTROL_H
+#ifndef CHESS_ENGINE_H
+#define CHESS_ENGINE_H
 
-#include "Instance.h"
+#include "Entity.h"
+#include "Human.h"
+#include "Algorithm.h"
+#include "AI.h"
 
-#endif //CHESS_CONTROL_H
+#endif //CHESS_ENGINE_H

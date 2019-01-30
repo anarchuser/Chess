@@ -7,7 +7,7 @@
 
 #include "Entity.h"
 
-class Algorithm: Entity {
+class Algorithm: public Entity {
 
 };
 

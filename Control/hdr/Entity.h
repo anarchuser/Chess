@@ -5,9 +5,18 @@
 #ifndef CHESS_ENTITY_H
 #define CHESS_ENTITY_H
 
+#include "control.h"
+
+
+#include  "../../Engine/hdr/engine.h"
+
+#include "../../Engine/hdr/Piece.h"
 
 class Entity {
-
+public:
+    virtual response_s getAction (Piece * board [][], Piece * list_pieces);
+private:
+    Color_e color;
 };
 
 

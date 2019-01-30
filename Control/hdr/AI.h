@@ -7,7 +7,7 @@
 
 #include "Entity.h"
 
-class AI: Entity{
+class AI: public Entity{
 
 };
 
