@@ -1,0 +1,23 @@
+### Gitignore to ignore all binary files as well as the test directory [test implementation of the game] ###
+
+# Ignore all files per default and
+# Ignore all bin files and folders:
+*
+bin/
+
+# Unignore .gitignore
+!.gitignore
+
+# Unignore all src files and folders:
+!*.cpp
+!src/
+
+# Unignore all hdr files and folders:
+!*.h
+!hdr/
+
+# Ignore Test folder and
+# Unignore Engine and Control folder:
+Test/
+!Engine/
+!Control/
