@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Chess" targetName="Chess" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5de4344-4224-478d-b88a-3687b546c01d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chess.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Server/server.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Server/server.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/controller.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/controller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Field/field.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Field/field.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Bishop/bishop.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Bishop/bishop.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/King/king.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/King/king.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Knight/knight.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Knight/knight.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Peasant/peasant.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Peasant/peasant.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Queen/queen.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Queen/queen.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Rook/rook.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/Rook/rook.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/Piece/piece.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/game.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Game/game.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Player/Human/human.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Player/Human/human.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Player/Machine/machine.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Player/Machine/machine.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Player/player.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Player/player.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/model.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/model.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/view.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/view.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chess.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chess.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/hdr/AI.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/hdr/Algorithm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/hdr/Entity.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/hdr/Human.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/hdr/control.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/hdr/stdcontrol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/src/AI.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/src/Algorithm.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/src/Entity.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/src/Human.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/hdr/Board.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/hdr/Color.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/hdr/Instance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/hdr/Piece.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Game/Piece/piece.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/hdr/engine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/hdr/stdengine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/src/Board.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/src/Color.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/src/Instance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/src/Piece.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/src/stdengine.cpp" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Q8nwWaWSfVgdqYo1rfoTK8Ceh0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Engine/src" />
+      <recent name="$PROJECT_DIR$/Engine/hdr" />
+      <recent name="$PROJECT_DIR$/Control/hdr" />
+      <recent name="$PROJECT_DIR$/Control/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Chess" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Chess" TARGET_NAME="Chess" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Chess" RUN_TARGET_NAME="Chess">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5de4344-4224-478d-b88a-3687b546c01d" name="Default Changelist" comment="" />
+      <created>1548757076537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548757076537</updated>
+      <workItem from="1548759729554" duration="8818000" />
+      <workItem from="1548840579056" duration="157000" />
+      <workItem from="1555233595237" duration="190000" />
+      <workItem from="1567161332016" duration="405000" />
+      <workItem from="1568805730636" duration="26000" />
+      <workItem from="1568805913601" duration="772000" />
+      <workItem from="1569247786080" duration="2095000" />
+      <workItem from="1569249893892" duration="407000" />
+      <workItem from="1569250325609" duration="815000" />
+    </task>
+    <task id="LOCAL-00001" summary="Removal of old files; complete rework of the project in the newly setup data structure">
+      <created>1548763944743</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548763944743</updated>
+    </task>
+    <task id="LOCAL-00002" summary="header additions">
+      <created>1548840732620</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548840732620</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Removal of old files; complete rework of the project in the newly setup data structure" />
+    <MESSAGE value="header additions" />
+    <option name="LAST_COMMIT_MESSAGE" value="header additions" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
